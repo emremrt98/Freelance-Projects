@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.general-theme {
+    width: 100%;
+    height: 349vh;
+    background: linear-gradient(to bottom, #4ab275, #ade2ff);
+    overflow: hidden;
+}
+
+
+/*----------------------NAVBAR----------------------*/
+.nav-bg-color {
+    background-color: #27366ac4;
+}
+
+.top-sideBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 200px;
+
+}
+
+.navbar-height {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -25px;
+}
+
+.nav-font {
+    font-size: 18px;
+
+}
+
+.hamburger-icon {
+    color: white;
+    font-size: 24px;
+}
+
+/*----------------------NAVBAR SOCIAL ICONS----------------------*/
+
+.social-icons {
+    font-size: 20px;
+}
+
+.navbar-social-a {
+    color: white;
+}
+
+.navbar-social-a:hover .social-icons {
+    color: white;
+    transform: scale(1.1);
+}
+
+/*----------------------Home----------------------*/
+.home-margin {
+    margin-bottom: 400px;
+}
+
+.home-pati {
+    width: 100%;
+    opacity: .5;
+    height: auto;
+    position: absolute;
+    top: 75px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-logo {
+    width: 800px;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+
+}
+
+.home-btn {
+    position: relative;
+    top: 500px;
+    left: 45%;
+    width: 200px;
+    padding: 10px;
+}
+
+.home-moon-gif {
+    width: 240px;
+    position: relative;
+    top: 350px;
+    left: 350px;
+}
+
+
+/*----------------------ABOUT----------------------*/
+.about-margin {
+    margin-top: 200px;
+}
+
+.images {
+    position: relative;
+    margin-left: 150px;
+    margin-right: -200px;
+
+}
+
+.image-position {
+    margin-right: -40px;
+}
+
+.about-text {
+    width: 80%;
+    font-size: 20px;
+    color: #192449;
+}
+
+.about-text2 {
+    width: 80%;
+    font-size: 20px;
+    color: #192449;
+}
+
+.about-image {
+    width: 100px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.about-image:hover {
+    transform: scale(1.5);
+}
+
+.about-img-house {
+    width: 500px;
+    position: absolute;
+    top: -250px;
+
+
+}
+
+
+/*----------------------Road Map----------------------*/
+.general-road {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    background-color: #fac423ce;
+    transition: all 1s;
+}
+
+.roadmap-header {
+    margin: 200px 0 50px 100px;
+    color: #192449;
+}
+
+.road-heading {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #192449;
+}
+
+.road-text {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    color: #192449;
+    font-weight: 500;
+}
+
+.bonus {
+    background-color: #fac423;
+}
+
+
+
+
+.btn-shadow {
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    background-color: #fac423;
+    color: #27356a;
+    font-weight: bold;
+}
+
+/*---------------------------------TEAMS CARD------------------------------*/
+
+.general-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 280px;
+    font-family: sans-serif;
+}
+
+.general-row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.general-col {
+    flex-basis: 100%;
+    overflow: hidden;
+}
+
+.general-card {
+    width: 200px;
+    height: 200px;
+
+    margin: auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.inner-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 50%;
+
+}
+
+.card-front {
+    background-position: center;
+    background-size: cover;
+}
+
+.front-0 {
+    background-image: url(../assets/teams/admin1.png);
+}
+
+.front-1 {
+    background-image: url(../assets/teams/admin2.png);
+}
+
+.front-2 {
+    background-image: url(../assets/teams/admin3.png);
+}
+
+.front-3 {
+    background-image: url(../assets/teams/spacebar.png);
+}
+
+
+.card-back {
+    background: #27366a;
+    transform: rotateY(180deg);
+}
+
+.general-card:hover .inner-box {
+    transform: rotateY(-180deg);
+}
+
+.general-card:hover {
+    transform: translateY(140deg);
+}
+
+.card-back-p {
+    display: inline-block;
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    margin-top: 75px;
+}
+
+.social-media {
+    color: #fff;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.join-me {
+    margin-top: 150px;
+}
+
+.join-me h1,
+.join-me p {
+    color: black;
+    margin-left: 110px;
+}
+
+.teams-heading,
+.teams-header {
+    text-align: center;
+
+}
+
+.teams-heading {
+    font-size: 18px;
+}
+
+.teams-header {
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+.gnr {
+    display: flex;
+}
+
+.team-container {
+    margin-top: -80px;
+}
+
+
+
+
+/*-------------------------------FOOTER----------------------------------------*/
+
+.footer-spec{
+    margin-top: 150px;
+    background-color: #27366ac4;
+}
+
+
+/*-------------------------------RESPONSIVE DESIGN----------------------------------------*/
+
+@media only screen and (max-width: 450px) {
+
+    /*Background size*/
+    .general-theme {
+        height: 503vh;
+    }
+
+    /*Team Card*/
+    .gnr {
+        display: inline-block;
+        width: 250%;
+    }
+
+    .general-row {
+        margin-bottom: 25px;
+    }
+
+    .general-col {
+        flex-basis: 30%;
+        overflow: hidden;
+    }
+
+    /*Logo*/
+    .home-pati {
+        top: 75px;
+
+        opacity: .3;
+    }
+
+    .home-logo {
+        width: 350px;
+        top: 155px;
+        left: 25px;
+    }
+
+    .home-btn {
+        top: 300px;
+        left: 25%;
+    }
+
+    .home-moon-gif {
+        width: 130px;
+        top: 320px;
+        left: 0px;
+    }
+
+    /*Navbar*/
+
+    .social-navbar1 {
+        display: none;
+    }
+
+    .social-navbar2 {
+        display: none;
+    }
+
+    .social-navbar3 {
+        display: none;
+    }
+
+    .social-navbar4 {
+        display: none;
+    }
+
+
+    /*About*/
+
+    .about-img-house {
+        width: 200px;
+        position: absolute;
+        top: -250px;
+    }
+
+    .about-h1 {
+        width: 200%;
+        margin-left: 20px;
+
+    }
+    .about-h1-1{
+        margin-left: 20px;
+        font-size: 16px;
+        width: 200%;
+    }
+    .about-text {
+        width: 200%;
+        margin-left: 20px;
+    }
+
+    .about-margin {
+        margin-top: 250px;
+    }
+
+    .images {
+        position: relative;
+        margin-left: 0px;
+        margin-right: 0px;
+        top: 20px;
+
+    }
+
+    .image-general1 {
+        position: absolute;
+        top: -20%;
+    }
+
+    .image-general2 {
+        position: absolute;
+        top: -10%;
+    }
+
+    .image-general3 {
+        position: absolute;
+        top: 4%;
+    }
+
+    .image-position {
+        margin-right: 0px;
+        position: absolute;
+
+    }
+
+    .image-position1 {
+        left: -40px;
+    }
+
+    .image-position2 {
+        left: 26px;
+    }
+
+    .image-position3 {
+        left: 93px;
+    }
+
+    .image-position4 {
+        left: 160px;
+    }
+
+    .image-position5 {
+        left: 225px;
+    }
+
+    .image-position6 {
+        left: 290px;
+    }
+
+    .about-image {
+        width: 60px;
+        margin-left: 40px
+    }
+
+    .about-h1-2 {
+        width: 200%;
+        font-size: 35px;
+        position: relative;
+        top: -350px;
+    }
+
+    .about-text2 {
+        width: 180%;
+        margin-left: 0px;
+        top: -110px;
+        position: relative;
+    }
+
+    .about-btn {
+        position: relative;
+        top: -100px;
+        left: 60px;
+        width: 200px;
+    }
+
+    .about-general {
+        position: relative;
+        top: 175px;
+        left: -230px;
+    }
+
+    /*ROADMAP*/
+    .roadmap-header {
+        margin: 200px 0 50px 0px;
+    }
+
+    .road-heading {
+        font-size: 30px;
+        padding-left: 30px;
+    }
+
+    .road-text {
+        font-size: 22px;
+    }
+
+    .road-container {
+        padding: 0px 20px;
+    }
+}
+
+/*-------------------------------RESPONSIVE DESIGN MONITOR----------------------------------------*/
+
+@media only screen and (min-width: 1950px) {
+
+    .general-theme {
+        height: 324vh;
+    }
+    
+    
+    /*----------------------NAVBAR----------------------*/   
+    
+    .logo {
+        width: 250px;
+    
+    }
+   
+    .nav-font {
+        font-size: 20px;
+    
+    }
+    
+    /*----------------------Home----------------------*/
+    .home-margin {
+        margin-bottom: 650px;
+    }
+    
+    .home-logo {
+        width: 1000px;
+        top: 300px;
+        left: 680px;
+    
+    }
+    
+    .home-btn {
+        top: 630px;
+        width: 250px;   
+    }
+    
+    .home-moon-gif {
+        width: 250px;
+        top: 550px;
+        left: 600px;
+    }
+    
+    /*----------------------ABOUT----------------------*/
+    .about-margin {
+        margin-top: 200px;
+    }
+    .about-h1-2{
+        font-size: 44px;
+    }
+    .about-h1{
+        font-size: 44px;
+    }
+    .about-h1-1{
+        font-size: 20px;
+    }
+    .images {
+  
+        margin-left: 150px;
+        margin-right: -200px;
+    
+    }
+    
+    .image-position {
+        margin-right: -40px;
+    }
+    
+    .about-text {
+        width: 90%;
+        font-size: 24px;
+     
+    }
+    
+    .about-text2 {
+        font-size: 24px;
+    }
+    
+    .about-image {
+        width: 125px;
+    }
+    
+    .about-img-house {
+        width: 650px;
+        top: -300px;
+    }
+    
+    .about-btn {
+        padding: 10px;
+        width: 300px;
+    }
+
+    /*----------------------Road Map----------------------*/
+    
+    
+    
+    .road-heading {
+        font-size: 38px;
+        padding-left: 25px;
+    }
+    
+    .road-text {
+        font-size: 26px;
+        margin-top: 25px;
+    }
+ 
+    
+ 
+    /*---------------------------------TEAMS CARD------------------------------*/
+   
+    
+    .general-row {
+        margin-right: 50px;
+    }
+    
+    .general-card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-back-p {
+        margin-top: 80px;
+        font-size: 22px;
+    }
+    
+    .social-media {
+        font-size: 21px;
+
+    }
+    
+    .teams-header {
+        font-size: 44px;
+     
+    }
+    
+    
+    
+    
+    
+    /*-------------------------------FOOTER----------------------------------------*/
+    
+    .footer-text{
+        font-size: 20px;
+    }
+
+    .footer-heading{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
